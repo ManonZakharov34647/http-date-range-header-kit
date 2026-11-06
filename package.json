@@ -1,0 +1,17 @@
+{
+  "name": "http-date-range-header-kit",
+  "version": "0.1.0",
+  "description": "Classifies an HTTP If-Range value as an entity-tag or an HTTP-date after validating it.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {}
+}
