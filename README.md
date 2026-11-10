@@ -32,3 +32,10 @@ The awkward edge you will hit: `parseIfRange` returns a tagged union, so `result
 - `formatHttpDate(date)` → IMF-fixdate string; throws `TypeError` on an invalid `Date`.
 - `isEntityTag(value)` → boolean
 - `isHttpDate(value)` → boolean
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
